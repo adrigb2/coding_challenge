@@ -1,0 +1,7 @@
+**
+!/app
+!/poetry.lock
+!/pyproject.toml
+!/Makefile
+!/tests
+!/.env

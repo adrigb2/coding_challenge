@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "An app"
+authors = ["Adrian Garcia Badaracco <1755071+adriangb@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = "0.17.1"
+fastapi = "0.63.0"
+uvicorn = {extras = ["standard"], version = "0.13.4"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+pytest-cov = "^2.11.1"
+pytest-sugar = "^0.9.4"
+pre-commit = "^2.12.1"
+requests = "^2.25.1"
+python-dotenv = "^0.17.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
